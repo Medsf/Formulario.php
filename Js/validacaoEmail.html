@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>Validacao Email</title>
+ </head>
+ <body>
+    <script type="text/JavaScript">
+       function verifica(){
+           if(document.forms[0].email.value.length == 0){
+               alert("Por favor,informe seu email");
+               document.frmEnvia.email.focus();
+               return false;
+           }
+           return true;
+       }
+
+       function checarEmail(){
+         if (document.forms[0].email.value == "" 
+         || (document.forms[0].email.value.indexOf('@') == -1
+         || (document.forms[0].email.value.indexOf('.') == -1){
+             alert("Por favor , informe um email valido");
+              return false;
+         }
+
+       }
+    </script>
+     <form method="post" onsubmit="return ( verifica() )" name="frmEnvia">
+    <label for="email">Email</label>
+    <input name="email" type="text" id="email" onblur="checarEmail();"/>
+    <input name="submit" type="submit" value="ENVIAR" />
+    </form>
+ </body>
+ </html>
+
+<h2>Funçao anonima</h2>
+
+
+ <script>
+ var somar = function(num1, num2) {
+  var result = num1 + num2;
+  alert("O resultado desse calculo é:" + result);
+ }
+
+ var valor = prompt("informe o primeiro numero");
+ var valor = prompt("informe o primeiro numero");
+ somar(valor1, valor2);
+
+ </script>
