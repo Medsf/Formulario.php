@@ -15,7 +15,7 @@ $logradouro = $_POST["Logradouro"];
 $numeroDaCasa = $_POST["numero"];
 $complemento = $_POST["complemento"];
 
-$cadastrar = "INSERT INTO usuario (nome, email, senha, usuario, genero, dataDeNascimento, cpf, telefone, uf, cidade, logradouro, numeroDaCasa, complemento) VALUES ('$nome', '$email', '$senha', '$usuario', '$cpf', '$dataDeNascimento', '$genero', '$telefone', '$uf', '$cidade', '$logradouro', '$numeroDaCasa', '$complemento')";
+$cadastrar = "INSERT INTO usuario (nome, email, senha, usuario, genero, dataDeNascimento, cpf, telefone, uf, cidade, logradouro, numeroDaCasa, complemento) VALUES ('$nome', '$email', '$senha', '$usuario', '$genero', '$dataDeNascimento', '$cpf', '$telefone', '$uf', '$cidade', '$logradouro', '$numeroDaCasa', '$complemento')";
 
 if(mysqli_query($conn, $cadastrar)){
     echo "<h1>Novo cadastro realizado</h1><br>";

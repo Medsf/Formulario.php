@@ -40,7 +40,7 @@ CREATE TABLE `usuario` (
   `dataDeNascimento` INT(8) NOT NULL,
   `cpf` INT(11) NOT NULL,
   `telefone` INT(15) NOT NULL,
-  `uf` varchar(300) NOT NULL,
+  `uf` varchar(2) NOT NULL,
   `cidade` varchar(300) NOT NULL,
   `logradouro` varchar(300) NOT NULL,
   `numeroDaCasa` INT(10) NOT NULL,
